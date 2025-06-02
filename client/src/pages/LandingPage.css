@@ -1,0 +1,89 @@
+.landing-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6rem;
+  min-height: 100vh;
+  background-color: #111; /* Dark theme */
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* Text section */
+.landing-header {
+  flex: 1;
+  max-width: 50%;
+}
+
+.landing-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+
+.landing-description {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+/* Call-to-action button */
+.landing-cta {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #2e00ff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.landing-cta:hover {
+  background-color: #1c00cc;
+}
+
+/* Image container */
+.landing-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 45%;
+}
+
+.landing-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+  .landing-container {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .landing-header,
+  .landing-image-wrapper {
+    max-width: 100%;
+  }
+
+  .landing-title {
+    font-size: 2.2rem;
+  }
+
+  .landing-description {
+    font-size: 1rem;
+  }
+
+  .landing-image {
+    margin-top: 2rem;
+  }
+}

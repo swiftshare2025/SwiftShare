@@ -1,0 +1,126 @@
+.main-container {
+  padding: 4rem 6rem;
+  background-color: #111;
+  color: #fff;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.main-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.form-container {
+  background-color: #fff;
+  color: #000;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-header {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.4rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+  color: #000;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submit-button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #2e00ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #1c00cc;
+}
+
+.error-text {
+  color: red;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.success-box {
+  margin-top: 1.5rem;
+  word-break: break-word;
+  font-size: 0.95rem;
+  background-color: #e6fff2;
+  color: #003d2f;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 45%;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+}

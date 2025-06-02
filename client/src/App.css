@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  background-color: #1f1f1f;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Use current text color */
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #cce4ff; /* subtle highlight on hover/focus */
+  outline: none;
+}
+
+.container {
+  padding: 40px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header .logo {
+  height: 50px;
+  cursor: pointer;
+}
+
+.header nav a {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.tagline {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 60px auto 40px auto;
+  max-width: 800px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-box {
+  background-color: #0066FF;
+  padding: 32px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 340px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
+}
+
+.upload-box h3 {
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.upload-box label {
+  font-weight: 600;
+  display: block;
+  margin-top: 10px;
+}
+
+.upload-box input,
+.upload-box textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background-color: #e7f0ff;
+  color: #000;
+}
+
+.upload-box input:focus,
+.upload-box textarea:focus {
+  outline: 2px solid #2400a8;
+}
+
+.upload-box textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+.upload-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3000d5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-box button:hover,
+.upload-box button:focus {
+  background-color: #2400a8;
+  outline: none;
+}
+
+.image-box {
+  background-color: #0066FF;
+  padding: 32px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  min-width: 320px;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+:root {
+  /* Dark theme colors (default) */
+  --bg-color: #1f1f1f;
+  --text-color: white;
+  --primary-color: #0066FF;
+  --button-bg: #3000d5;
+  --button-hover-bg: #2400a8;
+  --input-bg: #e7f0ff;
+  --input-text-color: black;
+  --box-shadow-color: rgba(0, 102, 255, 0.3);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+/* ... rest of your styles updated to use variables ... */
+.upload-box {
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 12px var(--box-shadow-color);
+}
+
+.upload-box input,
+.upload-box textarea {
+  background-color: var(--input-bg);
+  color: var(--input-text-color);
+}
+
+.upload-box button {
+  background-color: var(--button-bg);
+}
+
+.upload-box button:hover,
+.upload-box button:focus {
+  background-color: var(--button-hover-bg);
+}
+
+.image-box {
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 12px var(--box-shadow-color);
+}
+
+/* LIGHT THEME OVERRIDE */
+.light-theme {
+  --bg-color: #fefefe;
+  --text-color: #121212;
+  --primary-color: #3399FF;
+  --button-bg: #005bbb;
+  --button-hover-bg: #003d80;
+  --input-bg: #fff;
+  --input-text-color: #121212;
+  --box-shadow-color: rgba(51, 153, 255, 0.3);
+}
+
