@@ -9,6 +9,13 @@
   box-sizing: border-box;
 }
 
+.header-title {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  z-index: 10;
+}
+
 /* Text section */
 .landing-header {
   flex: 1;

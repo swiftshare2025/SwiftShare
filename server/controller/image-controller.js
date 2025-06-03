@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 import { v4 as uuidv4 } from 'uuid';
 import path from 'path';
 import fs from 'fs';
-import DownloadLink from '../models/DownloadLink.js'; // ✅ MAKE SURE THIS IS IMPORTED
+import DownloadLink from '../models/DownloadLink.js'; //MAKE SURE THIS IS IMPORTED
 
 const uploadImage = async (req, res) => {
   const file = req.file;
@@ -13,7 +13,7 @@ const uploadImage = async (req, res) => {
   }
 
   const downloadId = uuidv4();
-  const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // 7 days from now
+  const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // 7 days expiry
 
   const newLink = new DownloadLink({
     downloadId,

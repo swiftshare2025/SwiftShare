@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import vector from "../assets/Vector.png";
+import mainPage from '../assets/MainPagefinal.png';
 
 import { uploadFile } from "../services/api";
 import "./MainPage.css";
@@ -126,7 +126,7 @@ function MainPage() {
         </div>
 
         <div className="image-container">
-          <img src={vector} alt="File sharing" className="main-image" />
+          <img src={mainPage} alt="File sharing" className="main-image" />
         </div>
       </div>
     </div>

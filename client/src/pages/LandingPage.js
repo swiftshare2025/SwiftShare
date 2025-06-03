@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import landingImage from '../assets/landingpageimage.png';
+import landingImage from '../assets/landingpage.png';
 import './LandingPage.css'; 
 import Header from '../components/Header';
 
@@ -29,7 +29,7 @@ const LandingPage = () => {
       </header>
 
       <div className="landing-image-wrapper">
-        <img src={vector} alt="Landing illustration" className="landing-image" />
+        <img src={landingImage} alt="Landing illustration" className="landing-image" />
       </div>
     </section>
   );
