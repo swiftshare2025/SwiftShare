@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import vector from '../assets/Vector.png';
-import './LandingPage.css'; // Optional: scoped CSS file
+import landingImage from '../assets/landingpageimage.png';
+import './LandingPage.css'; 
 import Header from '../components/Header';
 
 const LandingPage = () => {
